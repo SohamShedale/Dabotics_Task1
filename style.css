@@ -1,0 +1,551 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h3{
+    color: #FF7F50;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: .5px solid black;
+    z-index: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #008080;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid black;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #89EAE9;
+    display: block;
+    transition: 0.2s;
+}
+  
+.sidenav a:hover {
+    color: #FF7F50;
+}
+
+#signInBtn{
+    margin: 10px 0 0 30px;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#header>span{
+    display: none;
+    font-size:30px;
+    cursor:pointer
+}
+
+#icon{
+    width: 30%;
+}
+
+#logo{
+    width: 3em;
+    height: 3em;
+}
+
+#navbar{
+    width: 40%;
+}
+
+#navList{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navList>li{
+    list-style: none;
+}
+
+#navList>li>a{
+    text-decoration: none;
+    color: #89EAE9;
+}
+
+#navList>li>a:hover{
+    color: #FF7F50;
+}
+
+#signIn{
+    width: 30%;
+}
+
+.btn{
+    background: none;
+    border: none;
+    background-color: #89EAE9;
+    padding: .5em;
+    border-radius: 1.2em;
+    color: #008080;
+}
+
+#signIn>.btn{
+    float: right;
+    margin-right: 1em;
+}
+
+.btn:hover{
+    background-color: #FF7F50;
+    color: white;
+    cursor: pointer;
+}
+
+#mainImage>img{
+    width: 100%;
+    height: 44em;
+}
+
+#aboutUs{
+    background-color: #008080;
+    margin-top: -4px;
+}
+
+h1{
+    padding: 1em;
+}
+
+#aboutUs>div{
+    display: flex;
+    padding: 2em 5em 3em;
+}
+
+#aboutUsContent{
+    width: 60%;
+    font-size:larger;
+    text-align: justify;
+    color: #89EAE9;
+}
+
+#aboutUsImage{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUsImage>img{
+    width: 25em;
+    height: 100%;
+}
+
+#services{
+    display: flex;
+    background-color: #cbdad5;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.card>img{
+    width: 8em;
+    height: 8em;
+}
+
+.card>label{
+    color: #FF7F50;
+    margin-top: .5em;
+}
+
+.card>p{
+    text-align: justify;
+    color: #008080;
+    margin-top: 1em;
+}
+
+#orderNow{
+    background-color: #008080;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3em 4em 3em;
+    height: 100%;
+}
+
+.foodItems{
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    background-color: #cbdad5;
+}
+
+.foodItems:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+.foodItems>div>img{
+    width: 100%;
+}
+
+.imgDiv{
+    overflow: hidden;
+}
+
+.imgDiv img{
+    transition: transform 1s ease;
+}
+
+.imgDiv:hover img{
+    transform: scale(1.2);
+}
+
+.itemDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+}
+
+.itemDescription>h3{
+    display: inline-block;
+}
+
+.itemDescription>p{
+    display: inline-block;
+    text-align: justify;
+    margin: 2em;
+ }
+
+.itemDescription>.btn{
+    position: absolute;
+    bottom: .8em;
+}
+
+#findMore{
+    margin-bottom: 2em;
+}
+
+#reviews{
+    background-color: #cbdad5;
+    height: 100%;
+}
+
+#customerCards{
+    display: flex;
+    justify-content: space-around;
+    margin: 3em;
+}
+
+.customer{
+    background-color: #008080;
+    width: 20em;
+    height: fit-content;  
+    border-radius: .5em; 
+    margin-bottom: 4em;
+}
+
+.customerDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.customerDetails>img{
+    height: 50%;
+    width: 30%;
+    border-radius: 50%;
+    position: absolute;
+    top: -25%;
+}
+
+.customerDetails>h3{
+    margin-top: 3em;
+}
+
+.customerDetails>p{
+    margin: 1em;
+    text-align: justify;
+    color: #cbdad5;
+}
+
+#subscribe{
+    background-color: #008080;
+    margin-top: -3em;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* position: relative; */
+    align-items: center;
+}
+
+#userEmail{
+    width: 35em;
+    height: 3.8em;
+    border-radius: 3em;
+    padding: .8em;
+    border: 1.6px solid black;
+}
+
+#subscribeBtn{
+    /* position: absolute; */
+    width: 6em;
+    padding: .5em;
+    border: none;
+    border-radius: 3em;
+    margin-top: 1.5em;
+    /* top: .8em;
+    right: 39em; */
+}
+
+#footer{
+    padding: 3em 3em .5em;
+    background-color: #cbdad5;
+}
+
+#linksContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listItems{
+    display: flex;
+    flex-direction: column;
+}
+
+.listItems>h2{
+    margin-bottom: 1em;
+}
+
+.listItems>li{
+    margin-bottom: .8em;
+    list-style: none;
+}
+
+.listItems>li>a{
+    text-decoration: none;
+    color: #008080;
+}
+
+.listItems>li>a:hover{
+    color: #FF7F50;
+}
+
+center>p{
+    font-size: 1.3rem;
+    color: #FF7F50;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    html{
+        width: 100%;
+    }
+    #header{
+        position: static;
+        width: 100%;
+    }
+    #header>span{
+        display: inline;
+    }
+    #icon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #navbar,#signIn{
+        display: none;
+    }
+    #aboutUs>div{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: .5em;
+    }
+    #aboutUsImage>img{
+        width: 10em;
+        height: 8em;
+        margin-bottom: 1em;
+    }
+    #services{
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+    .card{
+        width: 80%;
+        margin-bottom: 1.5em;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        padding: .1em;
+    }
+    .foodItems{
+        width: 90%;
+        margin-bottom: .5em;
+    }
+    #customerCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .customer{
+        width: 100%;
+    }
+    #userEmail{
+        width: 100%;
+    }
+    #linksContainer{
+        display: grid;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    #header{
+        position: static;
+    }
+    #header>span{
+        display: inline;
+    }
+    #icon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #navbar,#signIn{
+        display: none;
+    }
+    #aboutUs>div{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: .5em;
+    }
+    #aboutUsImage>img{
+        width: 10em;
+        height: 8em;
+        margin-bottom: 1em;
+    }
+    #service1>img{
+        margin-top: -1em;
+    }
+    #service1>label{
+        margin-top: -2em;
+    }
+    #service1>p{
+        margin-top: 0;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        padding: .1em;
+    }
+    .foodItems{
+        width: 90%;
+        margin-bottom: .5em;
+    }
+    #customerCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer{
+        padding: 1em 1.3em .2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #icon{
+        width: 20%;
+    }
+    #navbar{
+        width: 60%;
+    }
+    #signIn{
+        width: 20%;
+    }
+    #aboutUsContent{
+        width: 50%;
+    }
+    #aboutUsImage{
+        width: 50%;
+        align-items: center;
+    }
+    #aboutUsImage>img{
+        width: 85%;
+        height: 50%;
+    }
+    #service1{
+        margin-top: -1em;
+    }
+    .customer{
+        width: 13em;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    #aboutUsContent{
+        width: 50%;
+    }
+    #aboutUsImage{
+        width: 50%;
+    }
+    .foodItems{
+        height:100%;
+    }
+    .itemDescription{
+        padding: 1em;
+    }
+    .itemDescription>p{
+        margin: 1em ;
+    }
+    .orderBtn{
+        margin-bottom: -.5em;
+    }
+    .customer{
+        width: 15em;
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
